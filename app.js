@@ -26,7 +26,8 @@ app.use(userRouter);
 
 // MongoDB connection and server start
 mongoose
-  .connect("mongodb://localhost:27017/project")
+.connect("mongodb+srv://deshpandeshreyas434:shreyas123@cluster0.xmhcnwn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+  
   .then(() => {
     console.log("✅ MongoDB Connected Successfully");
     app.listen(port, () => {
